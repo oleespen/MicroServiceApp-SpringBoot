@@ -20,7 +20,7 @@ import java.util.stream.Collectors;
  * Created by ole-espen.lundsor on 10/05/2017.
  */
 @Controller
-public class FileUploadController {
+public class FileUploadController{
 
     private final StorageService storageService;
 

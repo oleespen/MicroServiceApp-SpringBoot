@@ -12,11 +12,18 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import java.io.IOException;
+import java.net.HttpURLConnection;
+import java.net.URL;
+
 /**
  * Created by ole-espen.lundsor on 07/05/2017.
  */
 @Controller
 public class UserController {
+
+    String url = "http://sample-env-2.puk3vd57rh.eu-central-1.elasticbeanstalk.com";
+
     @Autowired
     private UserService userService;
 
@@ -45,7 +52,7 @@ public class UserController {
 
         securityService.autologin(userForm.getUsername(), userForm.getPasswordConfirm());
 
-        return "redirect:/welcome";
+        return "redirect:/processForm";
     }
 
     @RequestMapping(value = "/login", method = RequestMethod.GET)
@@ -60,7 +67,24 @@ public class UserController {
     }
 
     @RequestMapping(value = {"/", "/welcome"}, method = RequestMethod.GET)
-    public String welcome(Model model) {
+    public String welcome() {
+
+        String urlUploadFiles = "http://sample-env-2.puk3vd57rh.eu-central-1.elasticbeanstalk.com";
+
+        try{
+            URL url = new URL(urlUploadFiles);
+            HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
+            httpURLConnection.connect();
+
+        }catch(Exception e){}
+
         return "welcome";
+    }
+
+    @RequestMapping(method = RequestMethod.GET)
+    public String processForm()
+    {
+
+        return "redirect:" + url;
     }
 }
