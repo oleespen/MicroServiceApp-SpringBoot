@@ -1,0 +1,33 @@
+<!-- Left side column. contains the sidebar -->
+<aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+        <!-- Sidebar user panel -->
+        <div class="user-panel">
+            <div class="pull-left image">
+                <img src="../../../public/images/user_img.png" class="img-circle" alt="User Image">
+            </div>
+            <div class="pull-left info">
+                <p>Apurav Chauhan</p>
+               
+            </div>
+        </div>
+        <ul class="sidebar-menu">
+            <li class="header">Main Navigation</li>
+
+            <li 
+                ng-class="{'active': leftbar.currentStateName == 'ADDMEDIA'}">
+                <a ui-sref="ADDMEDIA">
+                    <i class="fa fa-dashboard"></i> <span>Add Media</span>
+                </a>
+            </li>
+            <li  ng-class="{'active': leftbar.currentStateName == 'LIBRARY'}">
+                <a ui-sref="LIBRARY">
+                    <i class="fa fa-bar-chart"></i> <span>Media Library</span>
+                </a>
+            </li>
+
+        </ul>
+    </section>
+    <!-- /.sidebar -->
+</aside>

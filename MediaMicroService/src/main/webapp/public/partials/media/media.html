@@ -1,0 +1,57 @@
+
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="alert alert-success" ng-if="vm.success">
+            <span>File successfuly accepted for processing.</span>
+        </div>
+    </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <div class="box box-info">
+      <div class="box-header with-border">
+        <h3 class="box-title">Add Media</h3>
+      </div>
+        <form role="form" method="post" enctype="multipart/form-data"
+        target="mediaUploadFrame" id="uploadForm" name="uploadForm" action="http://localhost:8082/api/v1/media">
+                  <div class="box-body">
+                    <div class="form-group">
+                      <!-- select -->
+                    <div class="form-group">
+                      <label>Choose Media Type</label>
+                      <select class="form-control" name="typ" ng-init="vm.mediaType='IMG'" ng-model="vm.mediaType">
+                        <option value="IMG">Image</option>
+                        <option value="VID">Video</option>
+                        <option value="YTB">You Tube</option>
+                        
+                      </select>
+                    </div>
+                    <div class="form-group" ng-if="vm.mediaType=='YTB'">
+                      <label for="link">YouTube Video Url</label>
+                      <input type="text" class="form-control" id="link" name="meta['link']" placeholder="Enter YouTube  Video Url">
+                    </div>
+                    <div class="form-group" ng-if="vm.mediaType!='YTB'">
+                      <label for="file">Select Media</label>
+                      <input type="file" name="file" multiple id="file">
+                    </div>
+                      
+                    </div>
+                  </div><!-- /.box-body -->
+
+                  <div class="box-footer">
+                    <button type="submit" class="btn btn-primary">Add</button>
+                  </div>
+                </form>
+      
+      
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <iframe  id="mediaUploadFrame" name="mediaUploadFrame" height="0" width="0" frameborder="0" scrolling="yes"></iframe>
+
+  </div>
+</div>
+

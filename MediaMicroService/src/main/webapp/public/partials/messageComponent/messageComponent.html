@@ -1,0 +1,32 @@
+<div class="example-modal" ng-show="vm.isModal">
+    <div class="modal" id="errorModal" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" ng-class="vm.code == 503 || vm.code == 502 ? 'modal-warning' :'modal-danger'">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">{{vm.modalTitle}}</h4>
+                </div>
+                <div class="modal-body">
+                    <p>{{vm.modalBody}}</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline" ng-click="vm.reload()" ng-show="vm.code == 503 || vm.code == 502">{{vm.modalFooter}}</button>
+                    <button type="button" class="btn btn-outline" ng-show="vm.code == 503 || vm.code == 502" ng-click="vm.close()">Cancel</button>
+                    <a href="/logout" class="btn btn-outline" ng-show="vm.code == 401 || vm.code == 403">{{vm.modalFooter}}</a>
+                    <button type="button" class="btn btn-outline" ng-click="vm.close()" ng-show="vm.code == 400 || vm.code == 500">{{vm.modalFooter}}</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="alert alert-danger" ng-if="vm.isAlert">
+            <span ng-repeat="error in vm.modalBody track by $index">{{error}}<br></span>
+            <!--<ul>
+                <li ng-repeat="error in vm.modalBody">{{error}} </li>
+            </ul>-->
+        </div>
+    </div>
+</div>
+

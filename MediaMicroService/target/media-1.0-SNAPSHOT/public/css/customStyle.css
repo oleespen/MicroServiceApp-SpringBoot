@@ -1,0 +1,248 @@
+.skin-black .main-header > .navbar .navbar-custom-menu .navbar-nav > li > notification > a, .skin-black .main-header > .navbar .navbar-right > li > notification > a {
+    border-left: 1px solid #eee;
+    border-right-width: 0;
+}
+
+.skin-black .main-header > .navbar .navbar-nav > li > notification > a {
+    border-right: 1px solid #eee;
+}
+
+.skin-black .main-header > .navbar .nav > li > notification > a {
+    color: #333;
+}
+
+@media (max-width: 767px) {
+    .skin-black .main-header > .logo:hover {
+        background-color: #F3F3F4 !important;
+    }
+
+    .skin-black .main-header > .logo {
+        background-color: #F3F3F4 !important;
+        color: #fff;
+        border-bottom: 0 solid transparent;
+        border-right: none;
+    }
+}
+
+@media (max-width: 991px) {
+    .navbar-custom-menu .navbar-nav > li > notification > a {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        line-height: 20px;
+    }
+
+    .navbar-custom-menu > .navbar-nav > li > notification > .dropdown-menu {
+        position: absolute;
+        right: 5%;
+        left: auto;
+        border: 1px solid #ddd;
+        background: #fff;
+    }
+
+    .navbar-custom-menu > .navbar-nav > li > notification > .dropdown-menu {
+        position: absolute;
+        right: 5%;
+        left: auto;
+        border: 1px solid #ddd;
+        background: #fff;
+    }
+}
+
+.navbar-nav > li > notification > a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.navbar-nav > li > notification > a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 20px;
+}
+
+.nav > li > notification > a {
+    position: relative;
+    display: block;
+    padding: 15px 15px;
+}
+
+.main-header .navbar .nav > li > notification > a > .label {
+    position: absolute;
+    top: 9px;
+    right: 7px;
+    text-align: center;
+    font-size: 9px;
+    padding: 2px 3px;
+    line-height: .9;
+}
+
+.navbar-custom-menu > .navbar-nav > li > notification > .dropdown-menu {
+    position: absolute;
+    right: 0;
+    left: auto;
+}
+
+.navbar-nav > .notifications-menu > notification > .dropdown-menu, .navbar-nav > .messages-menu > .dropdown-menu, .navbar-nav > .tasks-menu > .dropdown-menu {
+    width: 280px;
+    padding: 0 0 0 0;
+    margin: 0;
+    top: 100%;
+}
+
+.navbar-nav > li > notification > .dropdown-menu {
+    margin-top: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.navbar-nav > .notifications-menu > notification > .dropdown-menu > li.header, .navbar-nav > .messages-menu > .dropdown-menu > li.header, .navbar-nav > .tasks-menu > .dropdown-menu > li.header {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color: #ffffff;
+    padding: 7px 10px;
+    border-bottom: 1px solid #f4f4f4;
+    color: #444444;
+    font-size: 14px;
+}
+
+.navbar-nav > .notifications-menu > notification > .dropdown-menu > li, .navbar-nav > .messages-menu > .dropdown-menu > li, .navbar-nav > .tasks-menu > .dropdown-menu > li {
+    position: relative;
+}
+
+.navbar-nav > .notifications-menu > notification > .dropdown-menu > li .menu, .navbar-nav > .messages-menu > .dropdown-menu > li .menu, .navbar-nav > .tasks-menu > .dropdown-menu > li .menu {
+    max-height: 200px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow-x: hidden;
+}
+
+.navbar-nav > .notifications-menu > notification > .dropdown-menu > li .menu > li > a {
+    color: #444444;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 10px;
+}
+
+.navbar-nav > .notifications-menu > notification > .dropdown-menu > li .menu > li > a, .navbar-nav > .messages-menu > .dropdown-menu > li .menu > li > a, .navbar-nav > .tasks-menu > .dropdown-menu > li .menu > li > a {
+    display: block;
+    white-space: nowrap;
+    border-bottom: 1px solid #f4f4f4;
+}
+
+.navbar-nav > .notifications-menu > notification > .dropdown-menu > li .menu > li > a > .glyphicon, .navbar-nav > .notifications-menu > notification > .dropdown-menu > li .menu > li > a > .fa, .navbar-nav > .notifications-menu > notification > .dropdown-menu > li .menu > li > a > .ion {
+    width: 20px;
+}
+
+.content-wrapper, .right-side {
+    min-height: 100%;
+    background-color: #f3f3f4;
+    z-index: 800;
+}
+
+.menu-icon-40 {
+    margin-left: -5px !important;
+}
+
+.bar-legend {
+    border: 1px solid lightgrey;
+    background-color: white;
+    padding: 10px;
+}
+
+/*.bar-legend .legend-title{
+    display: block;
+    margin-bottom: 0.5em;
+    line-height: 1.2em;
+    padding: 0 0.3em;
+}*/
+
+.bar-legend .legend-icon {
+    display: block;
+    float: left;
+    width: 1em;
+    height: 1em;
+    margin-right: 0.5em;
+    margin-top: 2px;
+}
+
+.select2-search-choice-close {
+    color: #fff;
+    font-size: 15px !important;
+    padding-left: 3px;
+}
+
+.navbar-nav > .user-menu > .dropdown-menu > li.user-header > img {
+    background: #fff;
+}
+
+.user-panel > .image > img {
+    background: #fff;
+
+}
+
+.user-body .active {
+    background-color: #00BAF2;
+}
+
+.user-body .active a {
+    color: white !important;
+    font-size: 15px;
+    font-weight: 900;
+}
+
+.user-body a {
+    color: black !important;
+    font-size: 15px;
+    font-weight: 900;
+}
+
+.dropdown-menu > div > .active > a, .dropdown-menu > div > .active > a:focus, .dropdown-menu > div > .active > a:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: #337ab7;
+    outline: 0;
+}
+
+.dropdown-menu > div > li > a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: 400;
+    line-height: 1.42857143;
+    color: #333;
+    white-space: nowrap;
+}
+
+.btn-nxt, .btn-nxt:hover {
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    margin-left: -1px;
+    line-height: 1.42857143;
+    color: #337ab7;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+.btn-prev, .btn-prev:hover {
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    line-height: 1.42857143;
+    color: #337ab7;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.no-wrap {
+    white-space: nowrap;
+}
